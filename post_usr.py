@@ -87,7 +87,7 @@ def registrar_atividade():
 
     if response.status_code == 201:
         print("Atividade registrada com sucesso")
-    if response.status_code == 400:
+    elif response.status_code == 400:
         print("Dados Invalidos")    
 
 def main():
@@ -103,8 +103,6 @@ def main():
 
         if escolha == "1":
             ler_qrcode()
-        elif escolha == "2":
-            verificar_cpf()
         elif escolha == "3":
             registrar_usuario()
         elif escolha == "4":
